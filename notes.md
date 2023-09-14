@@ -1,0 +1,3 @@
+# WELCOME TO THE HIMALAYAS
+
+Here's the [README.md]. For READING.
