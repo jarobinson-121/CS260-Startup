@@ -26,3 +26,9 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
 
 ## Javascript Notes
 
+#### Startup Ideas From The ChatGPT
+    - Song Lyric Swap: Users communicate using only song lyrics. It's a fun challenge to convey thoughts and emotions through snippets of popular songs.
+    - Fortune Cookie Chat: Users receive random 'fortune cookie' messages that inspire conversation topics or provide quirky advice.
+    - Personal Portfolio Site: Showcase your projects, skills, and achievements in a clean and organized manner. This can also serve as a digital resume.
+    - Recipe Repository: Create a website where you can share your favorite recipes, complete with ingredients, instructions, and perhaps even photos.
+    - Unpopular Opinions: A place to share exclusively unpopular opinions.
