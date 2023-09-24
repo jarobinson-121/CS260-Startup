@@ -19,7 +19,7 @@ Fortune cookies can be quite a lot of fun, but sometimes, you don't need to buy 
 
 I will be using each of the technologies in the following ways. 
 
-#### **HTML** 
+##### **HTML** 
   • Correct HTML structure
   • Four HTML Pages
     * Login
@@ -27,35 +27,35 @@ I will be using each of the technologies in the following ways.
     * Landing Page
     * Saved Fortunes
 
-#### **CSS**
+##### **CSS**
   • Styling to add:
     * Whitespace
     * Colors
     * General Spacing
 
-#### **Javascript**
+##### **Javascript**
   • Launch Fortune generator
   • Save Fortune(s)
   • Log in
   • Endpoint calls
 
-#### **Service**
+##### **Service**
   • Backend service with the endpoints for:
       * Authentication
       * Pulling fortunes
       * Saving fortunes to user
 
-#### **DB**
+##### **DB**
   • Store user information, including saved fortunes
 
-#### **Login**
+##### **Login**
   • Register and login users
   • Secure storage of user info
   • Cannot save fortunes without authentication
 
-#### **Websocket**
+##### **Websocket**
   • Display lucky numbers
   • Display most popular fortunes
 
-#### **React**
+##### **React**
   • Ported to using React framework
