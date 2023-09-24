@@ -10,52 +10,52 @@ Fortune cookies can be quite a lot of fun, but sometimes, you don't need to buy 
 <img width="1106" alt="Screenshot 2023-09-23 at 14 14 40" src="https://github.com/jarobinson-121/CS260-Startup/assets/91813271/8adb309a-2014-4097-b699-f4b487fd2b7f">
 
 ### Key Features
-• Authentication
-• Ability to request a new fortune
-• Ability to save a limited number of favorite fortunes
-• Ability to see saved fortunes
+- Authentication
+- Ability to request a new fortune
+- Ability to save a limited number of favorite fortunes
+- Ability to see saved fortunes
 
 ### Technology Usage
 
 I will be using each of the technologies in the following ways. 
 
 #### **HTML** 
-  • Correct HTML structure
-  • Four HTML Pages
+  - Correct HTML structure
+  - Four HTML Pages
     * Login
     * Fortune Generation
     * Landing Page
     * Saved Fortunes
 
 ##### **CSS**
-  • Styling to add:
+  - Styling to add:
     * Whitespace
     * Colors
     * General Spacing
 
 ##### **Javascript**
-  • Launch Fortune generator
-  • Save Fortune(s)
-  • Log in
-  • Endpoint calls
+  - Launch Fortune generator
+  - Save Fortune(s)
+  - Log in
+  - Endpoint calls
 
 ##### **Service**
-  • Backend service with the endpoints for:
+  - Backend service with the endpoints for:
       * Authentication
       * Pulling fortunes
       * Saving fortunes to user
 
 ##### **DB**
-  • Store user information, including saved fortunes
+  - Store user information, including saved fortunes
 
 ##### **Login**
-  • Register and login users
-  • Secure storage of user info
-  • Cannot save fortunes without authentication
+  - Register and login users
+  - Secure storage of user info
+  - Cannot save fortunes without authentication
 
 ##### **Websocket**
-  • Display lucky numbers
-  • Display most popular fortunes
+  - Display lucky numbers
+  - Display most popular fortunes
 
 ##### **React**
-  • Ported to using React framework
+  - Ported to using React framework
