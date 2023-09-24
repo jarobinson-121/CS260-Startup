@@ -32,3 +32,16 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     - Personal Portfolio Site: Showcase your projects, skills, and achievements in a clean and organized manner. This can also serve as a digital resume.
     - Recipe Repository: Create a website where you can share your favorite recipes, complete with ingredients, instructions, and perhaps even photos.
     - Unpopular Opinions: A place to share exclusively unpopular opinions.
+
+
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <title>First HTML</title>
+        </head>
+        <body>
+            Hello World
+        </body>
+    </html>
+
+

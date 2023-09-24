@@ -1,1 +1,6 @@
-# CS260-Startup
+# Fortune Finder
+## Description Deliverable
+
+### Elevator Pitch
+
+
