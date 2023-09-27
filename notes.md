@@ -21,8 +21,33 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * Sometimes called 'reverse proxies'
 
 ## HTML Notes
+    * Head is basically meta data that doesn't actually show on the page
 
 ## CSS Notes
+    * Can be embedded into the HTML inline
+    * CSS applies RULES to specific types
+    * While CSS can be placed in the head, there is usually a stylesheet created to handle all of the style rules
+    * 3em
+        * em means M in the font family that it's pulling from
+        * The number is times the size of the M in the font family
+    * Precedence
+        * if there are multiple CSS styles about the same type, the one that is closeset wins out, meaning the furthest down one wins. Since the stylesheet is another file completely, it always loses.
+    * Selectors
+        * the variable type that the CSS is written about
+        * If you have nested types, the most deeply nested style will overwrite the others.
+        * IDs are for individuals. Don't duplicate them.
+        * Classesare the opposite, they are intended for groups of things.
+    * Declarations
+        * The kinds of rules being added to the rule set
+
+    * Fonts
+        * @font-family
+            * allows you to host a font on your server 
+            * Still have to do the CSS that tells what to apply that font too
+        * @import
+            * allows you to pull fonts from other hosted servers
+            * using swap allows it to pull a normal font until the other can be loaded
+    * 
 
 ## Javascript Notes
 
