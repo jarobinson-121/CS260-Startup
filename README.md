@@ -62,4 +62,11 @@ I will be using each of the technologies in the following ways.
 
 
 ## **HTML Deliverable**
-    *
+For this deliverable, I built out the application's structure using HTML. More detailed descriptions below. 
+    * **HTML Pages:**  Five HTML pages to display Home page, login page, fortune generation landing page, open fortune page, and saved fortunes.
+    * **Links:** Each page has a menu to link to the other major pages, as well as a sign in button on most pages to link you to the sign in screen. The My Favorites link goes to the sign in page to ensure that the user would be signed in. 
+    * **Text:** The fortunes that are generated and displayed are text. The top 3 fortunes are also displayed as text. 
+    * **Images:** I added images for three of the pages. They will need some CSS styling to place the fortune on top of the picture and the logo centered on top of the picture on the home page. 
+    * **Login:** Sign in page with input fields for username and password to allow access to saved fortunes.
+    * **Database:** The generated fortune will be pulled from the database.
+    * **Websocket:** The top 3 fortunes represent the tallied votes with the most saves. 
