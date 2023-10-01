@@ -23,6 +23,7 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
 ## HTML Notes
     * Head is basically meta data that doesn't actually show on the page
 
+
 ## CSS Notes
     * Can be embedded into the HTML inline
     * CSS applies RULES to specific types
@@ -47,7 +48,15 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * @import
             * allows you to pull fonts from other hosted servers
             * using swap allows it to pull a normal font until the other can be loaded
-    * 
+    *     * Flex applies to the parent
+        * flex: 0 means no flex
+        * 
+    * Grid applies to the parent, and the children(contents) are the items in the grid
+    * Block applies to the width of the current thing that it's
+    * @media (orientation: portrait)
+        * Use this to tell it what size the display can flex to
+        * max-height: 700px (means 700px or less, this rule applies)
+    *
 
 ## Javascript Notes
 
