@@ -59,13 +59,35 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     *
 
 ## Javascript Notes
+    * Weak typing allows for a lot of flexibility between type assignments. This can be both good and bad. 
+    * 'Object' type is a collection of attribute-value pairs. 
+    * Falsy Things: 0, -0, ' ', Nan, null, undefined
+    * Truthy things: !falsy
+    * Equal Sign
+        * = is assignment
+        * == is "like sort of equality" - Don't Use
+        * === checks if the objects are equal
+    * Declaring Variables
+        * var - deprecated, don't use
+        * let - changeable
+        * const - not changeable
+    * Conditionals
+        * if else is back!
+        * for loops are back as well
+        * function = (example => rest of function, 
+    Closures
+        * what are they? - a function and its surrounding state. in other words, it returns a function
+        
 
+    
 #### Startup Ideas From The ChatGPT
     - Song Lyric Swap: Users communicate using only song lyrics. It's a fun challenge to convey thoughts and emotions through snippets of popular songs.
     - Fortune Cookie Chat: Users receive random 'fortune cookie' messages that inspire conversation topics or provide quirky advice.
     - Personal Portfolio Site: Showcase your projects, skills, and achievements in a clean and organized manner. This can also serve as a digital resume.
     - Recipe Repository: Create a website where you can share your favorite recipes, complete with ingredients, instructions, and perhaps even photos.
     - Unpopular Opinions: A place to share exclusively unpopular opinions.
+
+    
 
 
 <!DOCTYPE html>
