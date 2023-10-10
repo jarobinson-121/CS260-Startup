@@ -63,6 +63,7 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     * 'Object' type is a collection of attribute-value pairs. 
     * Falsy Things: 0, -0, ' ', Nan, null, undefined
     * Truthy things: !falsy
+    * => {} is a shorthand to create a function
     * Equal Sign
         * = is assignment
         * == is "like sort of equality" - Don't Use
@@ -77,6 +78,11 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * function = (example => rest of function, 
     Closures
         * what are they? - a function and its surrounding state. in other words, it returns a function
+        * A function with the soon to be out of scope things saved.
+    Events
+        * Scroll, click, hover, etc
+    Template Literals
+        * Allw variables in strings
         
 
     
