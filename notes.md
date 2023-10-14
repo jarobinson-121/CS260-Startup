@@ -83,6 +83,12 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * Scroll, click, hover, etc
     Template Literals
         * Allw variables in strings
+    Spread & Rest
+        * Opposites of each other
+            * Spread takes an array of something and spreads it out into each its own element
+            * Rest pulls a bunch of objects together into an array
+            * use the **...object** notation
+    
         
 
     
