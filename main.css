@@ -1,0 +1,38 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    flex: 0 80px;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    align-content: center;
+    color: #f0f3f5;
+    
+}
+
+div {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    background-size: cover;
+    
+}
+
+h3 {
+    color: #f0f3f5
+}
+
+main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    flex: 0 40px;
+}

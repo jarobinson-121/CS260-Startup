@@ -59,6 +59,7 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     *
 
 ## Javascript Notes
+<<<<<<< HEAD
     * Weak typing allows for a lot of flexibility between type assignments. This can be both good and bad. 
     * 'Object' type is a collection of attribute-value pairs. 
     * Falsy Things: 0, -0, ' ', Nan, null, undefined
@@ -90,6 +91,14 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
             * use the **...object** notation
     
         
+=======
+    * Javascript is for manipulating the DOM
+    * Javascript was originally a runtime process taking place in the browser
+        * Node.js allows you to run Javascript outside the browser
+    * Javascript can display in the browser by adding to the HTML
+    * It can also display in the console (console.log('hello' + ' ' + 'world'))
+    *
+>>>>>>> 42a67b9 (Added Header font, background image, and navbar styling.)
 
     
 #### Startup Ideas From The ChatGPT
