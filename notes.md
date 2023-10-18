@@ -89,6 +89,18 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
             * Spread takes an array of something and spreads it out into each its own element
             * Rest pulls a bunch of objects together into an array
             * use the **...object** notation
+    Promises
+        * Processes that are sort of considered separate from the normal sort of read-in-order idea of the rest of the program
+        * three parts: state(pending, resolved, or rejected), result(what came of it), and 
+        * Promises are one-time use for a specific situation, they cannot be reused to try and get another value
+    .catch
+        * like a then, but with only one function
+        * 
+    await
+        * cannot be called within a function unless that function is an async function
+        * Exception - await can be called in the top level
+    async
+
     
         
 =======
