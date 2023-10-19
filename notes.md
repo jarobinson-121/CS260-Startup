@@ -22,6 +22,7 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
 
 ## HTML Notes
     * Head is basically meta data that doesn't actually show on the page
+    * DOM = Document Object Model
 
 
 ## CSS Notes
@@ -104,7 +105,16 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     classes
         * there are classes.
         * static in front of the class means that the static applies to the class
-        
+    json
+        * A way to share/transfer data
+        * can't have a function attached to the object you're trying to pass
+            * specifically, it can't stringify the function, so it will delete it
+        * If something can be turned into a string and taken back from being a string, it can be sent.
+        * Many API calls use json files to return data
+        * 
+    Document
+        * Keyword for top node of the DOM
+    
 
     
         
@@ -115,7 +125,7 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
     * Javascript can display in the browser by adding to the HTML
     * It can also display in the console (console.log('hello' + ' ' + 'world'))
     *
->>>>>>> 42a67b9 (Added Header font, background image, and navbar styling.)
+
 
     
 #### Startup Ideas From The ChatGPT
