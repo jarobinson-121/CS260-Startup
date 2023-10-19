@@ -101,6 +101,11 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * Exception - await can be called in the top level
     async
 
+    classes
+        * there are classes.
+        * static in front of the class means that the static applies to the class
+        
+
     
         
 =======
