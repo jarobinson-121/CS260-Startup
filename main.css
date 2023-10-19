@@ -4,15 +4,11 @@ html{
     padding: 0;
 }
 
-header {
-    flex: 0 80px;
-}
-
-h1 {
+h1, .h1 {
     font-family: 'Luckiest Guy', cursive;
     align-content: center;
     color: #f0f3f5;
-    font-size: xx-large;
+    font-size: 72px !important;
 }
 
 h3 {
@@ -21,19 +17,32 @@ h3 {
 
 h4 {
     color: #19535F;
+    font-size: 38px !important;
+    text-align: center;
 }
 
 p, br {
+    font-family: 'Bitter';
     align-content: center;
     text-align: left;
 }
 
+li {
+    font-family: 'Bitter';
+}
+
+/* #Top3 {
+    padding-left: 25%;
+    padding-right: 25%;
+} */
+
 div {
+    flex: auto;
     width: 100%;
-    text-align: center;
+    text-align: left;
     align-content: center;
+    vertical-align: middle;
     background-size: cover;
-    
 }
 
 .btn-primary {
@@ -42,15 +51,15 @@ div {
 }
 
 #HeaderHero {
-    flex: 0 80px;
+    flex: 1;
     width: 100%;
     height: 35vh;
     align-content: center;
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle !important;
     padding-top: 75px;
     padding-bottom: 75px
-}
+} 
 
 main {
     height: 100%;
