@@ -13,12 +13,12 @@ body {
 h1, .h1 {
     font-family: 'Luckiest Guy', cursive;
     align-content: center;
-    color: #f0f3f5;
+    color: #19535F;
     font-size: 72px !important;
 }
 
 h3 {
-    color:#f0f3f5;
+    color: #19535F;
 }
 
 h4 {
@@ -30,7 +30,7 @@ h4 {
 p, br {
     font-family: 'Bitter';
     align-content: center;
-    text-align: left;
+    justify-content: left;
 }
 
 li {
@@ -41,9 +41,41 @@ li {
     list-style-type: none;
 }
 
-#Top3 {
-    padding: 5%;
-    justify-content: left;
+#closedbackground {
+    position:relative;
+    display:flex;
+    background-image: url('Opencookies.jpeg'); 
+    background-size:cover; 
+    height: 100%; 
+    align-items: center;
+    padding: 25vh;
+}
+
+#btntext {
+    display: block;
+    align-items: center;
+}
+
+#frtnbtncont {
+    position:relative;
+    display: flex;
+    flex: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 8px 10px #888888;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    box-shadow: 3px 5px 8px #888888;
+}
+
+main {
+    height: 100%;
 }
 
 #footerDiv {
@@ -54,15 +86,6 @@ li {
     align-items: center;
 }
 
-.btn-primary {
-    background-color: #0b7a75 !important;
-    border-color: #0b7a75 !important;
-}
-
-main {
-    height: 100%;
-}
-
 footer {
     position: absolute;
     display: flex;
@@ -71,4 +94,6 @@ footer {
     height: 10vh;
     width: 100%;
     flex: 0 10vh;
+    align-items: center;
+    vertical-align: middle;
 }
