@@ -68,6 +68,12 @@ li {
     align-content: center;
 }
 
+.btn-outline-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    color:#F0F3F5 !important;
+}
+
 .btn-primary {
     background-color: #0b7a75 !important;
     border-color: #0b7a75 !important;
