@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+h1, .h1 {
+    font-family: 'Luckiest Guy', cursive;
+    align-content: center;
+    color: #19535F;
+    font-size: 72px !important;
+}
+
+p, br {
+    font-family: 'Bitter';
+    align-content: center;
+    justify-content: left;
+}
+
+.btn-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    box-shadow: 3px 5px 8px #888888;
+}
+
+.btn-outline-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    color:#F0F3F5 !important;
+}
+
+#second {
+    background-color: #F0F3F5 !important;
+    border-color: #19535f !important;
+    color:#19535F;
+    border-width: 2px;
+    box-shadow: 2px 4px 6px #888888;
+}
+
+main {
+    height: 100%;
+}
+
+#footerDiv {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    background-color: #F0F3F5;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    flex: 0 10vh;
+    align-items: center;
+    vertical-align: middle;
+} 
