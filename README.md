@@ -71,3 +71,15 @@ For this deliverable, I built out the application's structure using HTML. More d
   * **Login:** Sign in page with input fields for username and password to allow access to saved fortunes.
   * **Database:** The generated fortune will be pulled from the database.
   * **Websocket:** The top 3 fortunes represent the tallied votes with the most saves. 
+
+
+## **HTML Deliverable**
+For this deliverable, I properly styled the application for its launch appearance.
+
+  * **Headers, Footers, and Body:**  Updated looks with indication as to which page you are currently viewing. 
+  * **Navigations Elements:** The nav bar is now an actual bar with links to each page. The navigation buttons on each page are also correctly styled. 
+  * **Text:** The fortunes that are generated and displayed are text. The top 3 fortunes are also displayed as text. 
+  * **Images:** I added images for three of the pages. They will need some CSS styling to place the fortune on top of the picture and the logo centered on top of the picture on the home page. 
+  * **Login:** Sign in page with input fields for username and password to allow access to saved fortunes.
+  * **Database:** The generated fortune will be pulled from the database.
+  * **Websocket:** The top 3 fortunes represent the tallied votes with the most saves. 

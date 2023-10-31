@@ -44,6 +44,7 @@ li {
 #closedbackground {
     position:relative;
     display:flex;
+    flex: 0 300px;
     background-image: url('Opencookies.jpeg'); 
     background-size:cover; 
     height: 100%; 
@@ -93,7 +94,7 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     display: flex;
     background-color: #F0F3F5;
     bottom: 0;

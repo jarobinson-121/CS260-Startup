@@ -10,11 +10,28 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
 
 #### Server Notes
     - Local host has an address that points to your device from your device
+    - 127.0.0.1
 
 ###### HTTPS:443
         * 443 is a port, meaining a door, and is the specific HTTPS port number
-        * 442 is SSH
+        * 22 is SSH
         * 80 is HTTP, the missing S means not secure
+
+## Console Commands Notes
+    * chmod: change access mode (permissions) 700(admin only all permissions)
+    * pwd: writes out the path from root directory to current
+    * cd: change directory
+    * ls: list folder contents
+    * vim: editing code from the console
+    * nano: command line text editor
+    * mkdir: make new folder/directory 
+    * mv: move folders/directories
+    * rm: remove
+    * man: user manual for what you can do
+    * ssh: secure shell
+    * ps: write status of active processes
+    * wget: download files from the internet
+    * sudo: 'superuser do' or perform the action with full access to everything
 
 ###### Gateway
         * helps to understand which service you're requesting to access, using subdomains
@@ -23,6 +40,9 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
 ## HTML Notes
     * Head is basically meta data that doesn't actually show on the page
     * DOM = Document Object Model
+
+    * span default display properties: none
+
 
 
 ## CSS Notes
@@ -114,6 +134,26 @@ Here's the [README.md](https://github.com/jarobinson-121/CS260-Startup/blob/main
         * 
     Document
         * Keyword for top node of the DOM
+
+    #
+        * Outdated way of marking something as private
+
+    Swtich
+        switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+        }
+    for loop
+        * regular in normal code
+        * when using on an object, uses for in to loop through the properties, for of loops through the values
+
+    
     
 
     
