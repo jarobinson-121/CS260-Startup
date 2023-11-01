@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Luckiest+Guy&display=swap" rel="stylesheet">  
+        <script src="main.js"></script>
     </head>
     <body>
         <header>
@@ -18,20 +19,19 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-              
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="window.location.href='index.html'">Home</a>
+                      <a class="nav-link" href="#" onclick="gohome()">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="window.location.href='findfortunes.html'">Find Fortunes<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#" onclick="toFortunes()">Find Fortunes</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="window.location.href='signin.html'">My Fortunes</a>
+                        <a class="nav-link" href="#" onclick="signmein()">My Fortunes<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                    <button class="btn btn-outline-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                    <button class="btn btn-outline-primary" onclick="signmein()">Sign In</button>
                   </form>
                 </div>
               </nav>
@@ -43,13 +43,13 @@
                     <h1>Sign-In</h1>
                     <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="max-width: 400px;">
+                    <input type="email" class="form-control" id="name" placeholder="Username" style="max-width: 400px;">
                     </div>
                     <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="max-width: 400px;">
                     </div>
-                    <button type="submit" class="btn btn-primary" onclick="window.location.href='myfortunes.html'">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
               </form>
             </div>
         </main>

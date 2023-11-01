@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
       <body>
         <header>
@@ -22,13 +23,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="window.location.href='index.html'">Home</a>
+                      <a class="nav-link" href="#" onclick="gohome()">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="window.location.href='findfortunes.html'">Find Fortunes<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#" onclick="toFortunes()">Find Fortunes</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="window.location.href='signin.html'">My Fortunes</a>
+                        <a class="nav-link" href="#" onclick="signmein()">My Fortunes<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
                     <button class="btn btn-outline-primary">Sign In</button>
@@ -61,7 +62,7 @@
                         <h4 class="d-flex flex-column display-5 fw-bold text-body-emphasis" style="align-items: center;">Treasure the beautiful moments in the dark days.</h4>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="window.location.href='findfortunes.html'">Find More Fortunes</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="toFortunes()">Find More Fortunes</button>
             </div>
         </main>
     
