@@ -82,3 +82,10 @@ For this deliverable, I properly styled the application for its launch appearanc
   * **Application elements:** There is good color contrast and spacing throughout the application.
   * **Text Content:** Fonts are included and consistent throughout the application.
   * **Images:** Images have been styled, including adding images as backgrounds and in the hero image. 
+
+## **Javascript Deliverable**
+For this deliverable, I implemented Javascript to allow a single user to navigate the interface and simulate some of the functionalities of upcoming additions.
+
+  * **Login:**  The sign in button takes you to a sign in screen. This screen stores the username in local storage for any future needs.  
+  * **Application Logic:** The More! button does change the fortune, if only once for now. This will later pull from a database. 
+  * **Database:** The More! button functionality will later be handled by the database. 

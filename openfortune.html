@@ -10,11 +10,12 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&family=Luckiest+Guy&display=swap" rel="stylesheet">
+      <script src="findfortunes.js"></script>
   </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <span class="navbar-brand" href="#" style="font-family: Luckiest Guy">fortunefinder</span>
+                <span class="navbar-brand" href="#" style="font-family: Luckiest Guy" onclick="gohome()">fortunefinder</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,16 +23,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="window.location.href='index.html'">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#" onclick="window.location.href='findfortunes.html'">Find Fortunes<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#" onclick="gohome()">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="window.location.href='signin.html'">My Fortunes</a>
+                      <a class="nav-link" href="#" onclick="toFortunes()">Find Fortunes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="signmein()">My Fortunes<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                    <button class="btn btn-outline-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                    <button class="btn btn-outline-primary" onclick="signin()">Sign In</button>
                   </form>
                 </div>
               </nav>
@@ -41,10 +42,10 @@
           <div id="closedbackground">
             <div style="background-color: #BFD7B5;" id="frtnbtncont" class="justify-content-center">
                 <div id="btntext" class="d-flex flex-column justify-content-center">
-                    <h4 class="d-flex flex-column display-5 fw-bold text-body-emphasis" style="align-items: center;">Your destiny is sitting next to you.</h4>
+                    <h4 id="fortunetext" class="d-flex flex-column display-5 fw-bold text-body-emphasis" style="align-items: center;">Your destiny is sitting next to you.</h4>
                     <div class="d-flex flex-row" style="margin-top: 3em;">                    
-                      <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="window.location.href='openfortune.html'">More!</button>
-                      <button id="second"type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="window.location.href='signin.html'">Save Fortune</button>
+                      <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="newFortune(newtext, fortuneList, iterationator)">More!</button>
+                      <button id="second"type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="saveFortune()">Save Fortune</button>
                     </div>
                 </div>
             </div>
