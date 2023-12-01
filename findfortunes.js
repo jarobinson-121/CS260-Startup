@@ -119,13 +119,34 @@ function newFortune(newtext, fortuneList, iterationator) {
     console.log(iterationator, fortuneList[iterationator]);
 }
 
-function saveFortune() {
-
+async function newFortune(data) {
+    const url = 'https://fortune-cookie4.p.rapidapi.com/slack';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'cce9287eefmsha3bfe59e36bf17dp1276d1jsnf7a360956124',
+            'X-RapidAPI-Host': 'fortune-cookie4.p.rapidapi.com'
+        }
+    };
+    
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+        
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-function replaceNewText(newtext, fortuneList, iterationator) {
-    newtext = fortuneList[iterationator];
-    iterationator++;
+function saveFortune() {
+    const fortuneEl = document.querySelector('#fortunetext');
+    localStorage.setItem('Fortune', fortuneEl.value);
+    window.location.href = "myFortunes.html";
+}
+
+function replaceNewText(newtext, result) {
+    newtext = result;
 }
 
 function toFortunes() {

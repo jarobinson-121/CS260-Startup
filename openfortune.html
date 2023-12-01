@@ -40,13 +40,15 @@
 
         <main>
           <div id="closedbackground">
-            <div style="background-color: #BFD7B5;" id="frtnbtncont" class="justify-content-center">
+            <div id="frtnbtncont" class="justify-content-center">
                 <div id="btntext" class="d-flex flex-column justify-content-center">
-                    <h4 id="fortunetext" class="d-flex flex-column display-5 fw-bold text-body-emphasis" style="align-items: center;">Your destiny is sitting next to you.</h4>
-                    <div class="d-flex flex-row" style="margin-top: 3em;">                    
-                      <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="newFortune(newtext, fortuneList, iterationator)">More!</button>
-                      <button id="second"type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="saveFortune()">Save Fortune</button>
-                    </div>
+                  <div id="fortune" class="d-flex flex-column display-5 fw-bold text-body-emphasis" style="align-items: center;">
+                    <h4 id="fortunetext">Your destiny is sitting next to you.</h4>
+                  </div>
+                  <div id="fortunebuttons" class="d-flex flex-row" style="margin-top: 3em;">                    
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="newFortune(newtext, fortuneList, iterationator)">More!</button>
+                    <button id="second"type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="saveFortune()">Save Fortune</button>
+                  </div>
                 </div>
             </div>
           </div>
