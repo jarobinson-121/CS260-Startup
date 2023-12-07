@@ -25,11 +25,11 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#" onclick="gohome()">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="toFortunes()">Find Fortunes</a>
-                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="signmein()">My Fortunes<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#" onclick="toFortunes()">Find Fortunes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="signmein()">My Fortunes</a>
                     </li>
                   </ul>
                     <button class="btn btn-outline-primary" onclick="signin()">Sign In</button>
@@ -46,7 +46,7 @@
                     <h4 id="fortunetext">Your destiny is sitting next to you.</h4>
                   </div>
                   <div id="fortunebuttons" class="d-flex flex-row" style="margin-top: 3em;">                    
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="newFortune(newtext, fortuneList, iterationator)">More!</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mr-2" onclick="newFortune()">More!</button>
                     <button id="second"type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="saveFortune()">Save Fortune</button>
                   </div>
                 </div>
