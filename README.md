@@ -89,3 +89,12 @@ For this deliverable, I implemented Javascript to allow a single user to navigat
   * **Login:**  The sign in button takes you to a sign in screen. This screen stores the username in local storage for any future needs.  
   * **Application Logic:** The More! button does change the fortune, if only once for now. This will later pull from a database. 
   * **Database:** The More! button functionality will later be handled by the database. 
+
+  ## **Service Deliverable**
+For this deliverable, I added express routing and endpoint stubs.
+
+  * **Node.js/HTTP Express:**  Added.  
+  * **Static Middleware for Frontend:** Added. 
+  * **Third Party Endpoint Calls:** Fortunes are pulled using a Third Party Endpoint.
+  * **Backend Endpoints:** Placeholders for login and saving of fortunes on the server.
+  * **Frontend Calls Service Endpoints:** This is done using the fetch function.
