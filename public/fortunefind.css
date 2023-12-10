@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, .h1 {
+    font-family: 'Luckiest Guy', cursive;
+    align-content: center;
+    color: #19535F;
+    font-size: 72px !important;
+}
+
+h3 {
+    color: #19535F;
+}
+
+h4 {
+    color: #19535F;
+    font-size: 38px !important;
+    text-align: center;
+}
+
+p, br {
+    font-family: 'Bitter';
+    align-content: center;
+    justify-content: left;
+}
+
+li {
+    font-family: 'Bitter';
+    line-height: 40px;
+    text-align: center;
+    /* align-content: center; */
+    list-style-type: none;
+}
+
+#closedbackground {
+    position:relative;
+    display:flex;
+    flex: 0 300px;
+    background-image: url('Opencookies.jpeg'); 
+    background-size:cover; 
+    height: 100%; 
+    align-items: center;
+    padding: 25vh;
+}
+
+#btntext {
+    display: block;
+    align-items: center;
+}
+
+#frtnbtncont {
+    position:relative;
+    display: flex;
+    flex: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 8px 10px #888888;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-outline-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    color:#F0F3F5 !important;
+}
+
+.btn-primary {
+    background-color: #0b7a75 !important;
+    border-color: #0b7a75 !important;
+    box-shadow: 3px 5px 8px #888888;
+}
+
+main {
+    height: 100%;
+}
+
+#footerDiv {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    background-color: #F0F3F5;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    flex: 0 10vh;
+    align-items: center;
+    vertical-align: middle;
+}
