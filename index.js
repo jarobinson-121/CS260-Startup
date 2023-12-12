@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
-// const configUrl = './config.json';
-
-// const fs = require('fs');
+const DB = './dbconfig.json';
 
 // // Read the config file
 // const rawConfig = fs.readFileSync('config.json');
@@ -28,7 +26,7 @@ apiRouter.get('/fortunes', (_req, res) => {
 
 // SaveFortune
 apiRouter.post('/fortune', (req, res) => {
-  fortunes = updateScores(req.body, fortunes);
+  fortunes = updateFortunes(req.body, fortunes);
   res.send(fortunes);
 });
 
@@ -40,3 +38,5 @@ app.use((_req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+module.exports
