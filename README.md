@@ -98,3 +98,10 @@ For this deliverable, I added express routing and endpoint stubs.
   * **Third Party Endpoint Calls:** Fortunes are pulled using a Third Party Endpoint.
   * **Backend Endpoints:** Placeholders for login and saving of fortunes on the server.
   * **Frontend Calls Service Endpoints:** This is done using the fetch function.
+
+    ## **MongoDB Deliverable**
+For this deliverable, I created a database and connected to it.
+
+  * **Node.js/HTTP Express:**  MongoDB created.  
+  * **Static Middleware for Frontend:** Backend endpoints connect to MongoDB.
+  * **Third Party Endpoint Calls:** Fortunes can be saved to the database.
