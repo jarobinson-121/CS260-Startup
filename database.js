@@ -1,4 +1,6 @@
 const { MongoClient } = require('mongodb');
+const bcrypt = require('bcrypt');
+const uuid = require('uuid');
 const config = require('./dbConfig.json');
 
 const url = `mongodb+srv://${config.username}:${config.password}@${config.hostname}`;
@@ -13,6 +15,29 @@ const fortuneCollection = db.collection('fortunes');
     console.log(`Unable to connect to database with ${url} because ${ex.message}`);
     process.exit(1);
   });
+
+
+  function getUser(email) {
+    return userCollection.findOne({ email: email });
+  }
+  
+  function getUserByToken(token) {
+    return userCollection.findOne({ token: token });
+  }
+  
+  async function createUser(email, password) {
+    // Hash the password before we insert it into the database
+    const passwordHash = await bcrypt.hash(password, 10);
+  
+    const user = {
+      email: email,
+      password: passwordHash,
+      token: uuid.v4(),
+    };
+    await userCollection.insertOne(user);
+  
+    return user;
+  }
 
   async function addFortune(fortune) {
     const result = fortuneCollection.insertOne(fortune);
@@ -47,5 +72,5 @@ const fortuneCollection = db.collection('fortunes');
     return cursor.toArray();
   }
   
-  module.exports = { addFortune, getFortunes, getNewFortune };
+  module.exports = { addFortune, getFortunes, getNewFortune, getUser, getUserByToken, createUser, };
   
