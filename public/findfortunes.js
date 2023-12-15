@@ -1,30 +1,4 @@
 'use strict'
-const express = require('express');
-const app = express();
-
-const { MongoClient } = require('mongodb');
-const config = require('./dbconfig.json');
-
-// import { rawConfig } from './index.js';
-
-// const rawConfig = require('./config.json');
-
-// const config = JSON.parse(rawConfig);
-
-// const apiKey = config.apiKey;
-
-// const apiEndpoint = config.apiEndpoint;
-
-// const fs = require('fs');
-
-
-// const rawConfig = fs.readFileSync('./config.json');
-// const config = JSON.parse(rawConfig);
-
-// const apiKey = config.apiKey;
-// const apiEndpoint = config.apiEndpoint;
-
-// console.log('API Key:', apiKey);
 
 function signin() {
     window.location.href = "signin.html";
@@ -35,7 +9,7 @@ function openFortune() {
     newFortune();
 }
 
-function newFortune(data) {
+ function newFortune(data) {
     const url = 'https://fortune-cookie4.p.rapidapi.com/slack';
     const options = {
         method: 'GET',
@@ -85,7 +59,8 @@ function saveFortuneLocal() {
 //     }
 //   }
 
-async function saveFortune(fortunetext) {
+async function saveFortune() {
+    let fortunetext = document.querySelector('#fortunetext');
     const newFortune = {fortune: fortunetext};
 
     try {
