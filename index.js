@@ -1,10 +1,6 @@
 const express = require('express');
 const app = express();
-const DB = './dbconfig.json';
-
-// // Read the config file
-// const rawConfig = fs.readFileSync('config.json');
-// module.exports = {rawConfig};
+const DB = require('./database.js');
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
@@ -24,11 +20,22 @@ apiRouter.get('/fortunes', (_req, res) => {
   res.send(fortunes);
 });
 
-// SaveFortune
-apiRouter.post('/fortune', (req, res) => {
+// Get new fortune
+apiRouter.get('/newfortune', (_req, res) => {
+    const newfortune = DB.getNewFortune();
+    res.send(newfortune);
+    console.log(newfortune);
+});
+
+
+apiRouter.post('/updatefortunes', (req, res) => {
   fortunes = updateFortunes(req.body, fortunes);
   res.send(fortunes);
 });
+
+apiRouter.post('/fortune', async (req, res) => {
+    DB.addFortune(req);
+  });
 
 // Return the application's default page if the path is unknown
 app.use((_req, res) => {
@@ -38,5 +45,3 @@ app.use((_req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
-
-module.exports
