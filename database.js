@@ -15,12 +15,12 @@ const fortuneCollection = db.collection('fortunes');
   });
 
   async function addFortune(fortune) {
-    const result = await fortuneCollection.insertOne(fortune);
+    const result = fortuneCollection.insertOne(fortune);
     return result;
   }
   
 
-  function getNewFortune(data) {
+  function getNewFortune() {
     const forturl = 'https://fortune-cookie4.p.rapidapi.com/slack';
     const options = {
         method: 'GET',
@@ -34,7 +34,6 @@ const fortuneCollection = db.collection('fortunes');
         .then((response) => response.json())
         .then((data) => {
             return data;
-            console.log(data);
         });
 }
 

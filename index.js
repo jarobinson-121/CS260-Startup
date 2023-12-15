@@ -34,7 +34,7 @@ apiRouter.post('/updatefortunes', (req, res) => {
 });
 
 apiRouter.post('/fortune', async (req, res) => {
-    DB.addFortune(req);
+    DB.addFortune(req.body);
   });
 
 // Return the application's default page if the path is unknown

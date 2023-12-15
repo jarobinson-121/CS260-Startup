@@ -9,7 +9,7 @@ function openFortune() {
     newFortune();
 }
 
- function newFortune(data) {
+ function newFortune() {
     const url = 'https://fortune-cookie4.p.rapidapi.com/slack';
     const options = {
         method: 'GET',
@@ -24,6 +24,8 @@ function openFortune() {
         .then((data) => {
             console.log(data);
 
+            localStorage.setItem("Current Fortune", data.text);
+
             const fortuneEl = document.querySelector("#fortunetext");
 
             fortuneEl.textContent = data.text;
@@ -32,11 +34,11 @@ function openFortune() {
         });
 }
 
-function saveFortuneLocal() {
-    const fortuneEl = document.querySelector('#fortunetext');
-    localStorage.setItem('Fortune', fortuneEl.value);
-    window.location.href = "myFortunes.html";
-}
+// function saveFortuneLocal() {
+//     const fortuneEl = document.querySelector('#fortunetext');
+//     localStorage.setItem('Fortune', fortuneEl.value);
+//     window.location.href = "myFortunes.html";
+// }
 
 // async function saveScore(score) {
 //     const userName = this.getPlayerName();
@@ -60,51 +62,40 @@ function saveFortuneLocal() {
 //   }
 
 async function saveFortune() {
-    let fortunetext = document.querySelector('#fortunetext');
-    const newFortune = {fortune: fortunetext};
-
-    try {
+    const newFortune = { "fortune" : localStorage.getItem("Current Fortune")};
       const response = await fetch('/api/fortune', {
         method: 'POST',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify(newFortune),
       });
-
-      // Store what the service gave us as the Saved Fortunes
-      const fortunes = await response.json();
-      localStorage.setItem('fortunes', JSON.stringify(fortunes));
-    } catch {
-      // If there was an error then just track fortunes locally
-      this.updateScoresLocal(newFortune);
-    }
   }
 
-function updateScoresLocal(newFortune) {
-    let fortunes = [];
-    const fortuneText = localStorage.getItem('fortunes');
-    if (fortuneText) {
-      fortunes = JSON.parse(fortuneText);
-    }
-    // updated to here
-    let found = false;
-    for (const [i, prevFortune] of fortunes.entries()) {
-      if (newFortune > prevFortune.fortune) {
-        fortunes.splice(i, 0, newFortune);
-        found = true;
-        break;
-      }
-    }
+// function updateScoresLocal(newFortune) {
+//     let fortunes = [];
+//     const fortuneText = localStorage.getItem('fortunes');
+//     if (fortuneText) {
+//       fortunes = JSON.parse(fortuneText);
+//     }
+//     // updated to here
+//     let found = false;
+//     for (const [i, prevFortune] of fortunes.entries()) {
+//       if (newFortune > prevFortune.fortune) {
+//         fortunes.splice(i, 0, newFortune);
+//         found = true;
+//         break;
+//       }
+//     }
 
-    if (!found) {
-      fortunes.push(newFortune);
-    }
+//     if (!found) {
+//       fortunes.push(newFortune);
+//     }
 
-    if (fortunes.length > 5) {
-      fortunes.length = 5;
-    }
+//     if (fortunes.length > 5) {
+//       fortunes.length = 5;
+//     }
 
-    localStorage.setItem('fortunes', JSON.stringify(fortunes));
-  }
+//     localStorage.setItem('fortunes', JSON.stringify(fortunes));
+//   }
 
 
 function replaceNewText(newtext, result) {
